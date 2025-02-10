@@ -1,4 +1,4 @@
-resource "aws_r53_record" "expense_r53" {
+resource "aws_route53_record" "expense_r53" {
     count = length(var.instances)
     zone_id = var.zone_id
     ttl = 1
