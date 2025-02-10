@@ -28,7 +28,7 @@ variable "tags" {
 
 variable "Environement" {
     type = string
-    default = "prod"
+    default = "dev"
   
 }
 

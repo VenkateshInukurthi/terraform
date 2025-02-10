@@ -27,7 +27,7 @@ resource "aws_security_group" "allow_ssh_conditions" {
 resource "aws_instance" "conditions_test_terraform" {
     ami = var.ami_id
     vpc_security_group_ids = [aws_security_group.allow_ssh_conditions.id]
-    instance_type = var.instance_type
+    instance_type = var.Environement == "prod" ? var.instance_type : "t3.small"
     
     tags = {
       Name = "Conditions_test"
