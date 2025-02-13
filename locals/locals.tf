@@ -3,5 +3,5 @@ locals {
   project = "expense"
   environment = "dev"
   zone_id = "Z03980142KYPX1BJQWBBZ"
-  instances = ["mysql", "backend", "frontend"]
+  
 }
