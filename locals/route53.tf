@@ -1,5 +1,5 @@
 resource "aws_route53_record" "locals_r53" {
-    count = var.instances[count.index]
+    count = length(var.instances)
     zone_id = local.zone_id
     type = "A"
     ttl = 1
