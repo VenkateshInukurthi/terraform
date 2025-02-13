@@ -5,7 +5,7 @@ data "aws_ami" "locals" {
 
     filter {
       name = "name"
-      values = "RHEL-9-DevOps-Practice"
+      values = ["RHEL-9-DevOps-Practice"]
     }
 
     filter {
