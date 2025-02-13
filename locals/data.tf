@@ -14,7 +14,7 @@ data "aws_ami" "locals" {
     }
 
     filter {
-      name = "virtualization-device"
+      name = "virtualization-type"
       values = ["hvm"]
     }
   
